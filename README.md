@@ -27,7 +27,7 @@ Feel free to add your input in issues.
    - fuel/application/config/MY_fuel.php
      - $config['admin_enabled'] = TRUE; //FALSE;
      - $config['fuel_mode'] = 'auto'; //views';
-
+    One should be able to login to fuel CMS now.
 
 2. lorem
    - lorem
