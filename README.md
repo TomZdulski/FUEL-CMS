@@ -31,7 +31,7 @@ Feel free to add your input in issues.
     One should be able to login to [FUEL CMS](http://localhost/fuel-oiml/fuel) now.
 
 2. Adding default language (other than 'english') as default CMS language
-   - Downloaded and installed language translations for 'polish' for 'fuel' module,
+   - Downloaded and installed language 'polish' texts translations for 'fuel' module,
      from main [FUEL-CMS-Languages](https://github.com/daylightstudio/FUEL-CMS-Languages) repository.
      (Or (for newest updates for polish language) from my [fork](https://github.com/TomZdulski/FUEL-CMS-Languages))
 
