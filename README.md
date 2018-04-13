@@ -34,8 +34,8 @@ Feel free to add your input in issues.
 
 
 #### TODO:
-    1. lorem
-       - lorem
+1. lorem
+   - lorem
 
 **__ Please ignore this file (README.MD) in pull commits - this only describes changes in 'opt-in-multi-language' branch. Below is its original content. __**
 
