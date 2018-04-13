@@ -72,7 +72,7 @@ Feel free to add your input in issues.
 
 3. Configuring FUEL CMS for language 'segment' mode and other important settings
    - Added in fuel/application/config/MY_FUEL.php (or change in fuel/modules/fuel/config/fuel.php) :
-     - `$config['language_mode'] = 'domain';`
+     - `$config['language_mode'] = 'segment';`
    - Changed default parser settings in fuel/application/config/MY_FUEL.php :
      - `$config['parser_engine'] = 'twig'; //'dwoo';`
      - `$config['parser_compile_dir'] = APPPATH . 'cache/twig/compiled/';` 
