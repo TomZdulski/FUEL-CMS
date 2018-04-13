@@ -38,7 +38,7 @@ Feel free to add your input in issues.
 1. lorem
    - lorem
 
-**_ Please ignore this file (README.MD) in pull commits - this only describes changes in 'opt-in-multi-language' branch. Below is its original content. _**
+** _Please ignore this file (README.MD) in pull commits - this only describes changes in 'opt-in-multi-language' branch. Below is its original content._ **
 
 # FUEL CMS
 FUEL CMS is a [CodeIgniter](https://codeigniter.com) based content management system. To learn more about its features visit: http://www.getfuelcms.com
