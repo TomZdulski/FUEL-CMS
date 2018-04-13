@@ -39,7 +39,7 @@ Feel free to add your input in issues.
    - Downloaded and installed 'polish' CodeIgniter messages translations
      from [bcit-ci/codeigniter3-translations](https://github.com/bcit-ci/codeigniter3-translations)
      into `/fuel/application/language/` directory.
-     (otherwise you'll get 'Unable to load the requested language file: language/polish/pagination_lang.php' error)
+     (otherwise you'll get 'Unable to load the requested language file: language/polish/pagination_lang.php' error later)
    - Downloaded and installed 'polish' FUEL-CMS messages translations for 'fuel' module,
      from main [FUEL-CMS-Languages](https://github.com/daylightstudio/FUEL-CMS-Languages) repository.
      Or (for newest updates, for polish language) from my [fork](https://github.com/TomZdulski/FUEL-CMS-Languages)
@@ -66,6 +66,7 @@ Feel free to add your input in issues.
      `pl:Polski`<br/>
      `en:English`<br/>
      (...other languages)
+     
 3. lorem
    - lorem
 
