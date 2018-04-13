@@ -62,10 +62,10 @@ Feel free to add your input in issues.
         `'repeatable'            => TRUE,`<br/>
         `'ignore_representative' => TRUE`<br/>
       `);`<br/>
-   - set used FUEL-CMS languages in FUEL Settings (en: MANAGE->Settings->FUEL, Languages to:<br/>
+   - Set used FUEL-CMS languages in FUEL Settings (en: MANAGE->Settings->FUEL, Languages) to:<br/>
      `pl:Polski`<br/>
      `en:English`<br/>
-     (...other languages)
+     `(...other languages lines)`
      
 3. lorem
    - lorem
