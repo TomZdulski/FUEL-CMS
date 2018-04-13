@@ -70,7 +70,20 @@ Feel free to add your input in issues.
      `en:English`<br/>
      `(...other needed languages lines here)`
 
-3. lorem
+3. Configuring FUEL CMS for language 'segment' mode and other important settings
+   - Added in fuel/application/config/MY_FUEL.php (or change in fuel/modules/fuel/config/fuel.php) :
+     - `$config['language_mode'] = 'domain';`
+   - Changed default parser settings in fuel/application/config/MY_FUEL.php :
+     - `$config['parser_engine'] = 'twig'; //'dwoo';`
+     - `$config['parser_compile_dir'] = APPPATH . 'cache/twig/compiled/';` 
+     - `$config['parser_delimiters'] = array(`<br/>
+       `'tag_comment'   => array('{#', '#}'),`<br/>
+       `'tag_block'     => array('{%', '%}'),`<br/>
+       `'tag_variable'  => array('{{', '}}'),`<br/>  &lt;- only this changed, with single bracers '{','}' other tags (comment,block) won't work.
+       `'interpolation' => array('#{', '}'),`<br/>
+       `);`<br/>
+
+4. lorem
    - lorem
 
 #### TODO:
