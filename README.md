@@ -1,4 +1,4 @@
-# FUEL CMS - Opt-In Multi-Language branch - for TEST - do not fork/clone - often edited(commits)
+# FUEL CMS - Opt-In Multi-Language branch
 ***Please ignore this file (README.MD) in Your merges - this one only describes changes in 'opt-in-multi-language' branch.
 Original content is at the end of this file.***
 
@@ -19,7 +19,7 @@ Feel free to add your input in issues.
 - 'segment' method for page language determination (allows for cleaner friendly links in different languages)
 - 
     
-- (not yet done) use of CKEditor (in later time, in modules for clients that don't want to format text in html tags (Markdown editor)
+- (not yet done) use of CKEditor (in later time, in modules for clients that don't want to format text in html tags (markItUp editor)
 
 ## CHANGE LOG
 
@@ -70,7 +70,7 @@ Feel free to add your input in issues.
      `en:English`<br/>
      `(...other needed languages lines here)`
 
-3. Configuring FUEL CMS for language 'segment' mode and other important settings
+3. Configuring FUEL CMS for language 'segment' mode and other related to it settings
    - Added in fuel/application/config/MY_fuel.php (or change in fuel/modules/fuel/config/fuel.php) :
      - `$config['language_mode'] = 'segment';`
    - Changed default parser settings in fuel/application/config/MY_FUEL.php :
@@ -97,10 +97,7 @@ Feel free to add your input in issues.
      - fuel_nav_items() - retrieves navigation records for specified nav_key / group_id/name / language<br/>
        (faster and easier way than navigation library method $this->fuel->navigation_model->find_all_by_group();)
      - fuel_lang_items() - returns language select menu for requested nav_item key (for fuel_nav() 'items' parameter
-     -  page_language_redirect() - redirects page to correct language uri if wrong(not available language for page) uri is detected.
-
-
-
+     -  page_language_redirect() - redirects page to correct language uri if wrong(not available language for page) uri is detected
 4. lorem
    - lorem
 
