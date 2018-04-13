@@ -18,8 +18,8 @@ Feel free to add your input in issues.
 
 #### DONE: (commits)
 1. Preparing FUEL-CMS (master) for multi-language pages develop in a Opt-In Controller way
-   -'master' branch as base (Fuel CMS v 1.4.2)
-   - performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema, made required folders writable (twig cache folder),
+   [x]'master' branch as base (Fuel CMS v 1.4.2)
+   [x] performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema, made required folders writable (twig cache folder),
 
 
 
