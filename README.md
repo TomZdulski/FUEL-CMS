@@ -5,7 +5,7 @@ Goal is to create FuelCMS configuration ready to produce single or multi languag
 I am developing source of this branch in NetBeans IDE project so there may be some specifics (like 'nbproject/' line in .gitignore file) but I'll try to maintain it as clean as possible.
 Feel free to add your input in issues.
 
-##### Assumptions:
+#### Assumptions:
 
 - use of Twig parsing engine (instead of dwoo)(but keeps dwoo cache folder for down-compatibility)
 - use of national language (polish) as default language, english is second and there may be more other languages used.
@@ -17,9 +17,9 @@ Feel free to add your input in issues.
 ## CHANGE LOG
 
 ### DONE: (commits)
- 1. Preparing FUEL-CMS (master) for multi-language pages develop in a Opt-In Controller way
-    [x] 'master' branch as base (Fuel CMS v 1.4.2)
-    [x]  performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema, made required folders writable (twig cache folder),
+1. Preparing FUEL-CMS (master) for multi-language pages develop in a Opt-In Controller way
+-'master' branch as base (Fuel CMS v 1.4.2)
+- performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema, made required folders writable (twig cache folder),
 
 
 
