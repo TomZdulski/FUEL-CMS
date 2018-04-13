@@ -31,9 +31,14 @@ Feel free to add your input in issues.
     One should be able to login to [FUEL CMS](http://localhost/fuel-oiml/fuel) now.
 
 2. Adding default language (other than 'english') as default CMS language
-   - Downloaded and installed 'polish' messages translations for 'fuel' module,
+   - Downloaded and installed 'polish' CodeIgniter messages translations 
+     from [bcit-ci/codeigniter3-translations](https://github.com/bcit-ci/codeigniter3-translations)
+     into `/fuel/application/language`. (otherwise you'll get 'Unable to load the requested language file: language/polish/pagination_lang.php' error)
+   - Downloaded and installed 'polish' FUEL-CMS messages translations for 'fuel' module,
      from main [FUEL-CMS-Languages](https://github.com/daylightstudio/FUEL-CMS-Languages) repository.
      (Or (for newest updates for polish language) from my [fork](https://github.com/TomZdulski/FUEL-CMS-Languages))
+     into `/fuel/modules/fuel/language`.
+   - change logged-in FUEL-CMS user language to polish. FUEL-CMS texts should now switch to installed language (most of them)
 
 
 #### TODO:
