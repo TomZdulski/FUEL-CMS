@@ -28,7 +28,7 @@ Feel free to add your input in issues.
      - `$config['admin_enabled'] = TRUE; //FALSE;`
      - `$config['fuel_mode'] = 'auto'; //views';`
      
-    One should be able to login to fuel CMS now.
+    One should be able to login to fuel [FUEL CMS](http://localhost/fuel-oiml/) now.
 
 2. lorem
    - lorem
