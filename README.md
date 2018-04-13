@@ -29,7 +29,7 @@ Feel free to add your input in issues.
      - $config['fuel_mode'] = 'auto'; //views';
 
 
-2. lorem
+3. lorem
    - lorem
 
 
