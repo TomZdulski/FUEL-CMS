@@ -48,7 +48,7 @@ Feel free to add your input in issues.
      installed language (most of them).
    - Add FUEL-CMS setting for languages, (as described in [docs.getfuelcms.com/general/localization](http://docs.getfuelcms.com/general/localization))
      in `fuel\application\config\My_fuel.php` :<br />
-     `$config['settings'] = array();
+     `$config['settings'] = array();<br/>
       $config['settings']['languages'] = array(
         'type' => 'keyval',
         'fields' => array(
@@ -59,6 +59,8 @@ Feel free to add your input in issues.
         'repeatable'            => TRUE,
         'ignore_representative' => TRUE
       );`
+   - Change in fuel/application/config/config.php
+     - `$config['language'] = 'polish'; //'english';`
 
 3. lorem
    - lorem
