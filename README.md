@@ -98,7 +98,6 @@ Feel free to add your input in issues.
        (faster and easier way than navigation library method $this->fuel->navigation_model->find_all_by_group();)
      - fuel_lang_items() - returns language select menu for requested nav_item key (for fuel_nav() 'items' parameter
      -  page_language_redirect() - redirects page to correct language uri if wrong(not available language for page) uri is detected
-
 4. lorem
    - lorem
 
