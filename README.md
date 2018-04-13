@@ -1,4 +1,4 @@
-# FUEL CMS - Opt-In Multi-Language branch - for TEST - do not fork/clone - often edited(commits)
+# FUEL CMS - Opt-In Multi-Language branch
 ***Please ignore this file (README.MD) in Your merges - this one only describes changes in 'opt-in-multi-language' branch.
 Original content is at the end of this file.***
 
