@@ -42,11 +42,23 @@ Feel free to add your input in issues.
      (otherwise you'll get 'Unable to load the requested language file: language/polish/pagination_lang.php' error)
    - Downloaded and installed 'polish' FUEL-CMS messages translations for 'fuel' module,
      from main [FUEL-CMS-Languages](https://github.com/daylightstudio/FUEL-CMS-Languages) repository.
-     Or (for newest updates for polish language) from my [fork](https://github.com/TomZdulski/FUEL-CMS-Languages)
+     Or (for newest updates, for polish language) from my [fork](https://github.com/TomZdulski/FUEL-CMS-Languages)
      into `/fuel/modules/fuel/language/` directory.
-   - change logged-in FUEL-CMS user language (user account setting), to polish. FUEL-CMS texts should now switch to
+   - Change logged-in FUEL-CMS user language (user account setting), to polish. FUEL-CMS texts should now switch to
      installed language (most of them).
-   - 
+   - Add FUEL-CMS setting for languages, (as described in [docs.getfuelcms.com/general/localization](http://docs.getfuelcms.com/general/localization))
+     in `fuel\application\config\My_fuel.php` :<br />
+     `$config['settings'] = array();
+      $config['settings']['languages'] = array(
+        'type' => 'keyval',
+        'fields' => array(
+          'key'   => array('ignore_representative' => TRUE),
+          'label' => array('ignore_representative' => TRUE),
+        ),
+        'class'                 => 'repeatable',
+        'repeatable'            => TRUE,
+        'ignore_representative' => TRUE
+      );`
 
 3. lorem
    - lorem
