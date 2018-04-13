@@ -1,4 +1,4 @@
-# FUEL CMS - Opt-In Multi-Language branch - for TEST - do not fork/clone - often edited(commits)
+# FUEL CMS - Opt-In Multi-Language branch
 This branch is focused on Multi-Language development of FUEL-CMS framework with heavy use of existing features of FUEL-CMS and Opt-In Controller Development, based on 'master' branch.
 The goal is to create FuelCMS configuration ready to produce single or multi language web page frontend with FuelCMS backend that can configure most of needed things from normal user perspective.
 
