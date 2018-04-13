@@ -1,4 +1,4 @@
-# FUEL CMS - Opt-In Multi-Language branch
+# FUEL CMS - Opt-In Multi-Language branch - for TEST - do not fork/clone - often commits
 This branch is focused on Multi-Language development of FUEL-CMS framework with heavy use of existing features of FUEL-CMS and Opt-In Controller Development, based on 'master' branch.
 Goal is to create FuelCMS configuration ready to produce single or multi language web page frontend with FuelCMS backend that can configure most of needed things from normal user perspective.
 
@@ -7,7 +7,7 @@ Feel free to add your input in issues.
 
 #### Assumptions:
 
-- use of Twig parsing engine (instead of dwoo)(but keeps dwoo cache folder for down-compatibility)
+- use of Twig parsing engine (instead of dwoo)(but keeping dwoo cache folder for down-compatibility)
 - use of national language (polish) as default language, english is second and there may be more other languages used.
 - 'segment' method for page language determination (allows for cleaner friendly links in different languages)
 - 
