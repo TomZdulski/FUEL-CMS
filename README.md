@@ -92,6 +92,13 @@ Feel free to add your input in issues.
 
      'langs' column is used to determine for which language(s) page has content variables (which languages specified page supports).
      Modified `fuel/install/fuel_schema.sql` file accordingly to add those two columns.
+   - Added full decoupling for FUEL database table's column names in `fuel/modules/fuel/config/fuel.php` - configuration table 'table_cols'
+   - Added `page_tools_helper.php` with functions:
+     - fuel_nav_items() - retrieves navigation records for specified nav_key / group_id/name / language<br/>
+       (faster and easier way than navigation library method $this->fuel->navigation_model->find_all_by_group();)
+     - fuel_lang_items() - returns language select menu for requested nav_item key (for fuel_nav() 'items' parameter
+     -  page_language_redirect() - redirects page to correct language uri if wrong(not available language for page) uri is detected.
+
 
 
 4. lorem
