@@ -30,15 +30,17 @@ Feel free to add your input in issues.
      
     One should be able to login to [FUEL CMS](http://localhost/fuel-oiml/fuel) now.
 
-2. lorem
-   - lorem
+2. Adding default language (other than 'english') as default CMS language
+   - Download and install language translations for Your language ('polish' in this fork) for modes you are using,
+     from main [FUEL-CMS-Languages](https://github.com/daylightstudio/FUEL-CMS-Languages) repository, 
+     or (for newest updates for polish language) from my [fork](https://github.com/TomZdulski/FUEL-CMS-Languages)
 
 
 #### TODO:
 1. lorem
    - lorem
 
-**__ Please ignore this file (README.MD) in pull commits - this only describes changes in 'opt-in-multi-language' branch. Below is its original content. __**
+***Please ignore this file (README.MD) in Your merges - this one only describes changes in 'opt-in-multi-language' branch. Below is its original content.***
 
 # FUEL CMS
 FUEL CMS is a [CodeIgniter](https://codeigniter.com) based content management system. To learn more about its features visit: http://www.getfuelcms.com
