@@ -79,7 +79,7 @@ Feel free to add your input in issues.
      - `$config['parser_delimiters'] = array(`<br/>
        `'tag_comment'   => array('{#', '#}'),`<br/>
        `'tag_block'     => array('{%', '%}'),`<br/>
-       `'tag_variable'  => array('{{', '}}'),`<br/>  &lt;- only this changed, with single bracers '{','}' other tags (comment,block) won't work.
+       `'tag_variable'  => array('{{', '}}'),` &lt;- only this changed, with single bracers '{','}' other tags (comment,block) won't work.<br/>
        `'interpolation' => array('#{', '}'),`<br/>
        `);`<br/>
 
