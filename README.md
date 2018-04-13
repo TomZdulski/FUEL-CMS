@@ -22,7 +22,7 @@ Feel free to add your input in issues.
    - performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema, made required folders writable (twig cache folder), 
    - fuel/application/config/database.php - changed to get access to installed SQL database 'fuel-oiml' with created user
    - fuel/application/config/config.php
-     - `$config['encryption_key'] = '[RandomKey](https://randomkeygen.com/)'`
+     - `$config['encryption_key'] = '`[RandomKey](https://randomkeygen.com/)`'`
      - `$config['sess_save_path'] = APPPATH . 'cache'; //NULL;`
    - fuel/application/config/MY_fuel.php
      - `$config['admin_enabled'] = TRUE; //FALSE;`
