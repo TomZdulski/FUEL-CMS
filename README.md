@@ -1,3 +1,33 @@
+# FUEL CMS - Opt-In Multi-Language branch
+This branch is focused on Multi-Language development of FUEL-CMS framework with heavy use of existing features of FUEL-CMS and Opt-In Controller Development, based on 'master' branch.
+Goal is to create FuelCMS configuration ready to produce single or multi language web page frontend with FuelCMS backend that can configure most of needed things from normal user perspective.
+
+I am developing source of this branch in NetBeans IDE project so there may be some specifics (like 'nbproject/' line in .gitignore file) but I'll try to maintain it as clean as possible.
+Feel free to add your input in issues.
+
+Assumptions:
+    - use of Twig parsing engine (instead of dwoo)(but keeps dwoo cache folder for down-compatibility)
+    - use of national language (polish) as default language, english is second and there may be more other languages used.
+    - 'segment' method for page language determination (allows for cleaner friendly links in different languages)
+    - 
+    
+    - use of CKEditor (in later time, in modules for clients that don't want to format text in html tags (Markdown editor)
+
+## CHANGE LOG
+
+###DONE: (commits)
+ 1. Preparing FUEL-CMS (master) for multi-language pages develop in a Opt-In Controller way
+    [x] 'master' branch as base (Fuel CMS v 1.4.2)
+    [x]  performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema, made required folders writable (twig cache folder),
+
+
+
+
+###TODO:
+
+
+Please ignore this file (README.MD) in pull commits - this only describes changes in 'opt-in-multi-language' branch. Below is its original content.
+
 # FUEL CMS
 FUEL CMS is a [CodeIgniter](https://codeigniter.com) based content management system. To learn more about its features visit: http://www.getfuelcms.com
 
