@@ -5,13 +5,14 @@ Goal is to create FuelCMS configuration ready to produce single or multi languag
 I am developing source of this branch in NetBeans IDE project so there may be some specifics (like 'nbproject/' line in .gitignore file) but I'll try to maintain it as clean as possible.
 Feel free to add your input in issues.
 
-Assumptions:
-    - use of Twig parsing engine (instead of dwoo)(but keeps dwoo cache folder for down-compatibility)
-    - use of national language (polish) as default language, english is second and there may be more other languages used.
-    - 'segment' method for page language determination (allows for cleaner friendly links in different languages)
-    - 
+#####Assumptions:
+
+- use of Twig parsing engine (instead of dwoo)(but keeps dwoo cache folder for down-compatibility)
+- use of national language (polish) as default language, english is second and there may be more other languages used.
+- 'segment' method for page language determination (allows for cleaner friendly links in different languages)
+- 
     
-    - use of CKEditor (in later time, in modules for clients that don't want to format text in html tags (Markdown editor)
+- use of CKEditor (in later time, in modules for clients that don't want to format text in html tags (Markdown editor)
 
 ## CHANGE LOG
 
