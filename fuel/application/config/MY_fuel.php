@@ -9,19 +9,27 @@
 $config['fuel_path'] = 'fuel/';
 
 // the name to be displayed on the top left of the admin
-$config['site_name'] = 'My Website';
+$config['site_name'] = 'Zuled Website';
 
 // whether the admin backend is enabled or not
-$config['admin_enabled']   = TRUE; //FALSE;
+$config['admin_enabled'] = TRUE; //FALSE;
+
 // options are cms, views, and auto. 
 // cms pulls views and variables from the database,
 // views mode pulls views from the views folder and variables from the _variables folder,
 // and the auto option will first check the database for a page and if it doesn't exist or is 
 // not published, it will then check for the corresponding view file.
-$config['fuel_mode']       = 'auto'; //views';
+$config['fuel_mode'] = 'auto'; //'views';
+
+// Specifies the method in which to look for pages with different languages.
+// Values can be "domain", "segment", "query_string" or "both" (which means both "segment" and "query_string")
+$config['language_mode'] = 'segment'; //domain';
+
 // specifies which modules are allowed to be used in the fuel admin
 $config['modules_allowed'] = array(
-    'user_guide',
+		'user_guide',
+		'user',
+                'blog',
 );
 
 // used for system emails
@@ -54,18 +62,18 @@ $config['assets_upload_max_height'] = 768;
 // ckeditor: suitable for clients; shows what the output will look like in the page (http://ckeditor.com/)
 // for more editor settings, look at the config/editors.php configuration file
 $config['text_editor'] = 'markitup';
+//$config['text_editor'] = 'ckeditor';
 
 // The parsing engine to use for FUEL. Options are dwoo, ci and now 'twig'!
-$config['parser_engine'] = 'dwoo';
-
+$config['parser_engine']      = 'twig'; //'dwoo';
 // The directory to put the parsed compiled files
-$config['parser_compile_dir'] = APPPATH . 'cache/dwoo/compiled/';
-
+$config['parser_compile_dir'] = APPPATH . 'cache/twig/compiled/'; //APPPATH.'cache/dwoo/compiled/';
 // The delimiters used by the parsing engine
-$config['parser_delimiters'] = array(
+$config['parser_delimiters']  = array(
     'tag_comment'   => array('{#', '#}'), // Twig only
     'tag_block'     => array('{%', '%}'), // Twig only
-    'tag_variable'  => array('{', '}'), // Used by Twig, Dwoo and CI. Default for twig is '{{', '}}' and Dwoo is '{', '}'
+    //'tag_variable'  => array('{', '}'), // Used by Twig, Dwoo and CI. Default for twig is '{{', '}}' and Dwoo is '{', '}'
+    'tag_variable'  => array('{{', '}}'), // Twig double bracers because single bracers are giving error with '{%' and '{#'
     'interpolation' => array('#{', '}'), // Twig only
 );
 
@@ -77,7 +85,8 @@ $config['parser_allowed_functions'] = array(
     'fuel_block', 'fuel_model', 'fuel_nav', 'fuel_edit', 'fuel_set_var', 'fuel_var', 'fuel_var_append', 'fuel_form', 'fuel_page', // FUEL specific
     'quote', 'safe_mailto', // HTML/URL specific
     'session_flashdata', 'session_userdata', // Session specific
-    'prep_url', 'site_url', 'show_404', 'redirect', 'uri_segment', 'auto_typography', 'current_url' // CI specific
+    'prep_url', 'site_url', 'show_404', 'redirect', 'uri_segment', 'auto_typography', 'current_url', // CI specific
+    // module fuctions here
 );
 
 /* Uncomment if you want to control FUEL settings in the CMS. Below are a couple examples of ones you can configure
@@ -100,7 +109,6 @@ $config['settings']['languages'] = array(
     'repeatable'            => TRUE,
     'ignore_representative' => TRUE
 );
-
 
 
 /* End of file MY_fuel.php */

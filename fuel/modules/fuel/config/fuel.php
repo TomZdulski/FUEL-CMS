@@ -385,6 +385,52 @@ $config['tables'] = array(
 	'fuel_users' => 'fuel_users'
 );
 
+// FUEL tables column names (database table names decoupling (continued;))
+$config['table_cols'] = array(
+    'fuel_navigation_groups' => array(
+        'id'        => 'id',
+        'name'      => 'name',
+        'published' => 'published',
+    ),
+    'fuel_navigation'        => array(
+        'id'         => 'id',
+        'location'   => 'location',
+        'group_id'   => 'group_id', // relation to fuel_navigation_groups.id
+        'nav_key'    => 'nav_key',
+        'label'      => 'label',
+        'parent_id'  => 'parent_id', // relation to fuel_navigation.id (navigation menu tree hierarachy)
+        'precedence' => 'precedence', // int, lower - first
+        'attributes' => 'attributes',
+        'selected'   => 'selected',
+        'hidden'     => 'hidden', // 'yes'/'no'
+        'language'   => 'language',
+        'published'  => 'published', // 'yes'/'no'
+    ),
+    'fuel_pages'             => array(
+        'id'               => 'id',
+        'location'         => 'location',
+        'layout'           => 'layout',
+        'published'        => 'published', // 'yes'/'no'
+        'cache'            => 'cache',
+        'date_added'       => 'date_added',
+        'last_modified'    => 'last_modified',
+        'last_modified_by' => 'last_modified_by',
+        'langs'            => 'langs',
+    //'nav_key'    => 'nav_key', ?
+    ),
+    'fuel_page_variables'    => array(
+        'id'       => 'id',
+        'page_id'  => 'page_id', // relation to fuel_pages.id (variable owned by page)
+        'name'     => 'name',
+        'scope'    => 'scope',
+        'value'    => 'value',
+        'type'     => 'type', // 'string','int','boolean','array'
+        'language' => 'language',
+        'active'   => 'active', // 'yes'/'no'
+    ),
+);
+
+
 
 /*
 |--------------------------------------------------------------------------

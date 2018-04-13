@@ -19,7 +19,7 @@ Feel free to add your input in issues.
 - 'segment' method for page language determination (allows for cleaner friendly links in different languages)
 - 
     
-- (not yet done) use of CKEditor (in later time, in modules for clients that don't want to format text in html tags (Markdown editor)
+- (not yet done) use of CKEditor (in later time, in modules for clients that don't want to format text in html tags (markItUp editor)
 
 ## CHANGE LOG
 
@@ -70,7 +70,36 @@ Feel free to add your input in issues.
      `en:English`<br/>
      `(...other needed languages lines here)`
 
-3. lorem
+3. Configuring FUEL CMS for language 'segment' mode and other related to it settings
+   - Added in fuel/application/config/MY_fuel.php (or change in fuel/modules/fuel/config/fuel.php) :
+     - `$config['language_mode'] = 'segment';`
+   - Changed default parser settings in fuel/application/config/MY_FUEL.php :
+     - `$config['parser_engine'] = 'twig'; //'dwoo';`
+     - `$config['parser_compile_dir'] = APPPATH . 'cache/twig/compiled/';` 
+     - `$config['parser_delimiters'] = array(`<br/>
+       `'tag_comment'   => array('{#', '#}'),`<br/>
+       `'tag_block'     => array('{%', '%}'),`<br/>
+       `'tag_variable'  => array('{{', '}}'),` &lt;- only this changed, with single bracers '{','}' other tags (comment,block)
+ won't work.<br/>
+       `'interpolation' => array('#{', '}'),`<br/>
+       `);`<br/>
+   - Added columns 'langs' and 'nav_key' to 'fuel_pages' table (this allows use 'nav_key' as  connection between pages
+     and navigation items, as there can be two cases:
+     1. cms-created pages have the same names (location)(&lt;-page name without language segment) in languages<br/>
+     (i.e. 'home') but different uri-s: '/' or 'en/' (FUEL CMS default)
+     2. cms-created pages have different names i.e. 'o-mnie' (pl) and 'about-me' (en) with different uri-s: 'o-mnie'(pl),
+        en/about-me(en) but should be treated as one page in different languages
+
+     'langs' column is used to determine for which language(s) page has content variables (which languages specified page supports).
+     Modified `fuel/install/fuel_schema.sql` file accordingly to add those two columns.
+   - Added full decoupling for FUEL database table's column names in `fuel/modules/fuel/config/fuel.php` - configuration table 'table_cols'
+   - Added `page_tools_helper.php` with functions:
+     - fuel_nav_items() - retrieves navigation records for specified nav_key / group_id/name / language<br/>
+       (faster and easier way than navigation library method $this->fuel->navigation_model->find_all_by_group();)
+     - fuel_lang_items() - returns language select menu for requested nav_item key (for fuel_nav() 'items' parameter
+     -  page_language_redirect() - redirects page to correct language uri if wrong(not available language for page) uri is detected
+
+4. lorem
    - lorem
 
 #### TODO:
