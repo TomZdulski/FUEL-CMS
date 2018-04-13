@@ -29,8 +29,13 @@ Feel free to add your input in issues.
      - $config['fuel_mode'] = 'auto'; //views';
 
 
+2. lorem
+   - lorem
+
+
 #### TODO:
-    1. -
+    1. lorem
+       - lorem
 
 **__ Please ignore this file (README.MD) in pull commits - this only describes changes in 'opt-in-multi-language' branch. Below is its original content. __**
 
