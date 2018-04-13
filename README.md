@@ -82,9 +82,9 @@ Feel free to add your input in issues.
        `'tag_variable'  => array('{{', '}}'),` &lt;- only this changed, with single bracers '{','}' other tags (comment,block) won't work.<br/>
        `'interpolation' => array('#{', '}'),`<br/>
        `);`<br/>
-     - Added columns 'langs' and 'nav_key' to 'fuel_pages' table (this allows use 'nav_key' as  connection between pages and navigation items, as there can be two cases:
-       1. cms-created pages have the same names (location)(&lt;-page name without language segment) in languages (i.e. 'home') but different uri-s '/' or 'en/' (FUEL CMS default)
-       2. cms-created pages have different names i.e. 'o-mnie' (pl) and 'about-me' (en) with different uri-s: 'o-mnie'(pl), en/about-me(en) but should be treated as one page in different languages
+   - Added columns 'langs' and 'nav_key' to 'fuel_pages' table (this allows use 'nav_key' as  connection between pages and navigation items, as there can be two cases:
+     1. cms-created pages have the same names (location)(&lt;-page name without language segment) in languages (i.e. 'home') but different uri-s '/' or 'en/' (FUEL CMS default)
+     2. cms-created pages have different names i.e. 'o-mnie' (pl) and 'about-me' (en) with different uri-s: 'o-mnie'(pl), en/about-me(en) but should be treated as one page in different languages
 
 4. lorem
    - lorem
