@@ -26,13 +26,13 @@ Feel free to add your input in issues.
 #### DONE: (commits)
 1. Preparing FUEL-CMS (master) for multi-language pages develop in a Opt-In Controller way (localhost-testing website)
    - 'master' branch as base (Fuel CMS v 1.4.2)
-   - performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema,
+   - Performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema,
      made required folders writable (twig cache folder), 
    - fuel/application/config/database.php - changed to get access to installed SQL database 'fuel-oiml' with created user
-   - fuel/application/config/config.php
+   - Changed fuel/application/config/config.php
      - `$config['encryption_key'] = '`[RandomKey](https://randomkeygen.com/)`'`
      - `$config['sess_save_path'] = APPPATH . 'cache'; //NULL;`
-   - fuel/application/config/MY_fuel.php
+   - Changed fuel/application/config/MY_fuel.php
      - `$config['admin_enabled'] = TRUE; //FALSE;`
      - `$config['fuel_mode'] = 'auto'; //views';`
      
@@ -47,12 +47,12 @@ Feel free to add your input in issues.
      from main [FUEL-CMS-Languages](https://github.com/daylightstudio/FUEL-CMS-Languages) repository.
      Or (for newest updates, for polish language) from my [fork](https://github.com/TomZdulski/FUEL-CMS-Languages)
      into `/fuel/modules/fuel/language/` directory.
-   - Change logged-in FUEL-CMS user language (user account setting), to polish. FUEL-CMS texts should now switch to
+   - Changed logged-in FUEL-CMS user language (user account setting), to polish. FUEL-CMS texts should now switch to
      installed language (most of them).
-   - Change in fuel/application/config/config.php
+   - Changed in fuel/application/config/config.php
      - `$config['language'] = 'polish'; //'english';`<br/>
-     (Otherwise some CMS pages will still be displayed in english (except pages and page cache))
-   - Add FUEL-CMS setting for languages, (as described in [docs.getfuelcms.com/general/localization](http://docs.getfuelcms.com/general/localization))
+     (Otherwise some CMS pages will still be displayed in english (except 'Pages' and 'Page cache' (?)))
+   - Added FUEL-CMS setting for languages, (as described in [docs.getfuelcms.com/general/localization](http://docs.getfuelcms.com/general/localization))
      in<br/>fuel\application\config\MY_fuel.php:<br/>
      `$config['settings'] = array();`<br/>
      `$config['settings']['languages'] = array(`<br/>
@@ -68,7 +68,7 @@ Feel free to add your input in issues.
    - Set used FUEL-CMS languages in FUEL Settings (en: MANAGE->Settings->FUEL, Languages) to:<br/>
      `pl:Polski`<br/>
      `en:English`<br/>
-     `(...other languages lines)`
+     `(...other needed languages lines here)`
 
 3. lorem
    - lorem
