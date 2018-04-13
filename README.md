@@ -91,7 +91,7 @@ Feel free to add your input in issues.
         en/about-me(en) but should be treated as one page in different languages
 
      'langs' column is used to determine for which language(s) page has content variables (which languages specified page supports)
-     Modified fuel/install/fuel_schema.sql accordingly to add those two columns.
+     Modified `fuel/install/fuel_schema.sql` file accordingly to add those two columns.
 
 
 4. lorem
