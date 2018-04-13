@@ -1,6 +1,6 @@
 # FUEL CMS - Opt-In Multi-Language branch - for TEST - do not fork/clone - often edited(commits)
 This branch is focused on Multi-Language development of FUEL-CMS framework with heavy use of existing features of FUEL-CMS and Opt-In Controller Development, based on 'master' branch.
-Goal is to create FuelCMS configuration ready to produce single or multi language web page frontend with FuelCMS backend that can configure most of needed things from normal user perspective.
+The goal is to create FuelCMS configuration ready to produce single or multi language web page frontend with FuelCMS backend that can configure most of needed things from normal user perspective.
 
 I am developing source of this branch in NetBeans IDE project so there may be some specifics (like 'nbproject/' line in .gitignore file) but I'll try to maintain it as clean as possible.
 Feel free to add your input in issues.
@@ -17,17 +17,22 @@ Feel free to add your input in issues.
 ## CHANGE LOG
 
 #### DONE: (commits)
-1. Preparing FUEL-CMS (master) for multi-language pages develop in a Opt-In Controller way
+1. Preparing FUEL-CMS (master) for multi-language pages develop in a Opt-In Controller way (local-testing website)
    - 'master' branch as base (Fuel CMS v 1.4.2)
-   - performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema, made required folders writable (twig cache folder),
-
-
+   - performed steps from 'welcome' page (.htaccess file, installed database, created database user, installed sql schema, made required folders writable (twig cache folder), 
+   - fuel/application/config/database.php - changed to get access to installed SQL database 'fuel-oiml' with created user
+   - fuel/application/config/config.php
+     - $config['encryption_key'] = '{[RandomKey](https://randomkeygen.com/)}'
+     - $config['sess_save_path'] = APPPATH . 'cache'; //NULL;
+   - fuel/application/config/MY_fuel.php
+     - $config['admin_enabled'] = TRUE; //FALSE;
+     - $config['fuel_mode'] = 'auto'; //views';
 
 
 #### TODO:
+    1. -
 
-
-Please ignore this file (README.MD) in pull commits - this only describes changes in 'opt-in-multi-language' branch. Below is its original content.
+**__ Please ignore this file (README.MD) in pull commits - this only describes changes in 'opt-in-multi-language' branch. Below is its original content. __**
 
 # FUEL CMS
 FUEL CMS is a [CodeIgniter](https://codeigniter.com) based content management system. To learn more about its features visit: http://www.getfuelcms.com
